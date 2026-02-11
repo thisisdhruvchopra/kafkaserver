@@ -1,4 +1,4 @@
-config.json
 state/
 *.pyc
 __pycache__/
+*.jsonl

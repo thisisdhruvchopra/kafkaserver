@@ -1,0 +1,28 @@
+{
+  "kafka": {
+    "bootstrap_servers": ["localhost:9092"],
+    "security_protocol": "PLAINTEXT",
+    "group_id": "log_receiver"
+  },
+  "encryption_key": "PASTE_SAME_FERNET_KEY_HERE",
+  "topics": [
+    "chat_topic",
+    "syslog-message",
+    "alternstivelog-message",
+    "authlog-message",
+    "dpkglog-message",
+    "apthistory-message",
+    "aptterm-message",
+    "wndsystemdsecurity",
+    "wndsystemdsystem",
+    "wndsystemdwindowsbit",
+    "windowsapplocker",
+    "windowsnewservice",
+    "windowsbitlocker",
+    "windowsfirewall",
+    "windowsdefender",
+    "windowspowershell"
+  ],
+  "output_dir": "/var/log/chatterbox-logs",
+  "file_rotation_mb": 100
+}
